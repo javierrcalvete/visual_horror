@@ -1,5 +1,11 @@
 ~ start
 
 Voice: I feel like dying too
+- who are you?
+	Voice: A sack of meat
+- where am i?
+	Voice: Nowhere really
+- i dont feel like talking
+	=> END
 
 => END
