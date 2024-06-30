@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://x686ebuibkcw"]
+
+[ext_resource type="Texture2D" uid="uid://b4oo61a8wvq8k" path="res://assets/door.jpg" id="1_57hqw"]
+
+[node name="Node" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 746.0
+offset_right = 1952.0
+offset_bottom = 1104.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 602.0
+offset_top = -31.0
+offset_right = 1338.0
+offset_bottom = 777.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(990, 355)
+scale = Vector2(0.779392, 0.838743)
+texture = ExtResource("1_57hqw")
