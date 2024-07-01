@@ -1,6 +1,6 @@
 extends Node
 
-@onready var prisoner_1: Node2D = get_node("../Level_1/Prisoner1")
+@onready var prisoner_1: Node2D = get_node("../GAME/Level_1/Prisoner1")
 
 var prisoner1_enter : bool = false
 # Called when the node enters the scene tree for the first time.

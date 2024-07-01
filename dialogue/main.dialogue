@@ -10,5 +10,5 @@ Voice: I feel like dying too
 	
 	=> END
 do Level1Manager.prisoner1_start()
-	
+Voice: We are trapped here!
 => END
