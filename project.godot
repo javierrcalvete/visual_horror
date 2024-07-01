@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-GameManagerDialogue="*res://scripts/GameManagerDialogue.gd"
+Level1Manager="*res://scripts/Level1Manager.gd"
 
 [dialogue_manager]
 

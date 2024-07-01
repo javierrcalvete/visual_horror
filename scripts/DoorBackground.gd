@@ -9,5 +9,5 @@ func _ready() -> void:
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	var animation_finishes=anim_name
-	print(animation_finishes)
+
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "start")
