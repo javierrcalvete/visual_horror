@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://x686ebuibkcw"]
+[gd_scene load_steps=8 format=3 uid="uid://x686ebuibkcw"]
 
 [ext_resource type="Texture2D" uid="uid://b4oo61a8wvq8k" path="res://assets/door.jpg" id="1_57hqw"]
 [ext_resource type="Script" path="res://scripts/DoorBackground.gd" id="2_slw33"]
 [ext_resource type="PackedScene" uid="uid://cfasblbn154pd" path="res://scenes/prisoner_1.tscn" id="3_k2j40"]
+[ext_resource type="Script" path="res://scripts/prisoner_1.gd" id="4_dejoi"]
 
 [sub_resource type="Animation" id="Animation_jtlgc"]
 resource_name = "fade_in"
@@ -79,5 +80,6 @@ libraries = {
 
 [node name="Prisoner1" parent="." instance=ExtResource("3_k2j40")]
 position = Vector2(964, 364)
+script = ExtResource("4_dejoi")
 
 [connection signal="animation_finished" from="DoorBackground/AnimationPlayer" to="DoorBackground" method="_on_animation_player_animation_finished"]

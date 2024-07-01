@@ -11,15 +11,18 @@ config_version=5
 [application]
 
 config/name="Visual Horror"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GameManagerDialogue="*res://scripts/GameManagerDialogue.gd"
 
 [dialogue_manager]
 
+general/states=["GameManagerDialogue"]
 general/balloon_path="res://dialogue/balloon.tscn"
 
 [display]

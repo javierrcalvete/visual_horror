@@ -7,5 +7,5 @@ Voice: I feel like dying too
 	Voice: Nowhere really
 - i dont feel like talking
 	=> END
-
+[prisoner1_enter = true]
 => END
