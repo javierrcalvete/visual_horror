@@ -15,7 +15,9 @@ func _process(delta: float) -> void:
 
 
 func prisoner1_start():
-	
-		prisoner_1.start_prisoner1()
+	prisoner_1.start_prisoner1()
 	
 
+func prisoner1_end():
+	print("fade out prisoner")
+	prisoner_1.end_prisoner1()
