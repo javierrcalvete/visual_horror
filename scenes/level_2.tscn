@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://qq56r8t86nde"]
+
+[ext_resource type="Texture2D" uid="uid://c5ti0mk5wle8i" path="res://assets/hallway.jpg" id="1_m0n6s"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -16.0
+offset_top = 746.0
+offset_right = 1952.0
+offset_bottom = 1104.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 591.0
+offset_top = -31.0
+offset_right = 1338.0
+offset_bottom = 777.0
+color = Color(0, 0, 0, 1)
+
+[node name="Hallway" type="Sprite2D" parent="."]
+position = Vector2(965, 359)
+scale = Vector2(0.730469, 0.812565)
+texture = ExtResource("1_m0n6s")
