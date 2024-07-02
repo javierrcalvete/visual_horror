@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bl2kiksaanhhp"]
+
+[ext_resource type="Script" path="res://scripts/item/item_data.gd" id="1_vmbur"]
+[ext_resource type="Texture2D" uid="uid://duvqeg28qqe1d" path="res://assets/knife.png" id="1_xfb8t"]
+
+[resource]
+script = ExtResource("1_vmbur")
+type = 0
+item_name = "Knife"
+item_damage = 2
+description = ""
+item_texture = ExtResource("1_xfb8t")
