@@ -9,10 +9,10 @@ Voice: I feel like dying too
 - i dont feel like talking
 	
 	=> END
-do Level1Manager.prisoner1_start()
+do Level1Manager.prisoner1_start() #calls prisioner sprite fade in Level1Manager
 Prisoner: We are trapped here!
 Prisoner: My name is Agustin
 Prisoner: You have to go through that door before its to late
-do Level1Manager.prisoner1_end()
+do Level1Manager.prisoner1_end() #calls prisioner fade out from Level1Manager
 set Level1Manager.prisioner1_dialogue_finish = true
 => END
