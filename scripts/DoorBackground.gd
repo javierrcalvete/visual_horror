@@ -13,9 +13,11 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "start")
 
 
-func _on_area_2d_mouse_entered() -> void:
+
+
+func _on_control_mouse_entered() -> void:
 	print("mouse enter")
 
 
-func _on_area_2d_mouse_exited() -> void:
+func _on_control_mouse_exited() -> void:
 	print("mouse exit")
