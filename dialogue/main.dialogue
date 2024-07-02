@@ -14,4 +14,5 @@ Prisoner: We are trapped here!
 Prisoner: My name is Agustin
 Prisoner: You have to go through that door before its to late
 do Level1Manager.prisoner1_end()
+set Level1Manager.prisioner1_dialogue_finish = true
 => END
