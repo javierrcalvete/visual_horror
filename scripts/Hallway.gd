@@ -20,4 +20,4 @@ func _on_mouse_signal_knife_gui_input(event: InputEvent) -> void:
 			Inventory.inventory_dictionary["Knife"] = knife_item
 			DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "knife_found")
 			knife_item.visible = true
-			print(Inventory.inventory_dictionary)
+			#print(Inventory.inventory_dictionary)

@@ -87,5 +87,14 @@ position = Vector2(977.76, 383)
 rotation = -1.33867
 scale = Vector2(3, 3)
 
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_left = 609.0
+offset_top = 847.0
+offset_right = 875.0
+offset_bottom = 1113.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CenterContainer"]
+scale = Vector2(3, 3)
+
 [connection signal="animation_finished" from="Hallway/HallwayAnimationPlayer" to="Hallway" method="_on_hallway_animation_player_animation_finished"]
 [connection signal="gui_input" from="Hallway/MouseSignalKnife" to="Hallway" method="_on_mouse_signal_knife_gui_input"]

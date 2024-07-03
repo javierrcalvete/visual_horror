@@ -8,5 +8,6 @@ script = ExtResource("1_vmbur")
 type = 0
 item_name = "Knife"
 item_damage = 2
+item_health = 0
 description = ""
 item_texture = ExtResource("1_xfb8t")

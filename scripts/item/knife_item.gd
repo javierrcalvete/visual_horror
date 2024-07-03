@@ -15,6 +15,7 @@ var stats: ItemData = null:
 func _ready():
 	self.visible = false
 	stats = KnifeItem
-	print(KnifeItem.item_damage)
 	
+
+
 
