@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://qq56r8t86nde"]
+[gd_scene load_steps=8 format=3 uid="uid://qq56r8t86nde"]
 
 [ext_resource type="Texture2D" uid="uid://c5ti0mk5wle8i" path="res://assets/hallway.jpg" id="1_m0n6s"]
 [ext_resource type="Script" path="res://scripts/Hallway.gd" id="2_l2uk8"]
 [ext_resource type="PackedScene" uid="uid://bqdb16ygwxqcf" path="res://inventory/knife_item.tscn" id="3_6sfvi"]
+[ext_resource type="PackedScene" uid="uid://bda3evmaammqn" path="res://scenes/inventory.tscn" id="4_sj7ys"]
 
 [sub_resource type="Animation" id="Animation_g5j8b"]
 length = 0.001
@@ -87,14 +88,11 @@ position = Vector2(977.76, 383)
 rotation = -1.33867
 scale = Vector2(3, 3)
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-offset_left = 709.0
-offset_top = 871.0
-offset_right = 749.0
-offset_bottom = 911.0
-
-[node name="Sprite2D" type="Sprite2D" parent="CenterContainer"]
-scale = Vector2(3, 3)
+[node name="Inventory" parent="." instance=ExtResource("4_sj7ys")]
+offset_left = 660.0
+offset_top = 905.0
+offset_right = 660.0
+offset_bottom = 905.0
 
 [connection signal="animation_finished" from="Hallway/HallwayAnimationPlayer" to="Hallway" method="_on_hallway_animation_player_animation_finished"]
 [connection signal="gui_input" from="Hallway/MouseSignalKnife" to="Hallway" method="_on_mouse_signal_knife_gui_input"]
