@@ -17,3 +17,4 @@ func _ready():
 	stats = KnifeItem
 	print(KnifeItem.item_damage)
 	
+

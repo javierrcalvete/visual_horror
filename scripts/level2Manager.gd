@@ -1,3 +1,11 @@
 extends Node
 
-var 
+
+
+
+
+func knife_found():
+	var knife_item: Node2D = get_node("/root/Level2/KnifeItem")
+	print(knife_item)
+	knife_item.queue_free()
+

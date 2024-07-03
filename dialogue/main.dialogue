@@ -25,5 +25,6 @@ You: in the blood, there is something
 => END
 
 ~ knife_found
-You found a knife!
+-You found a knife!-
+set Level2Manager.knife_found()
 => END
