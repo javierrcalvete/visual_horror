@@ -19,10 +19,13 @@ func _process(delta: float) -> void:
 func show_item_slot(place):
 	var sprite_2d: Sprite2D = $BoxContainer/Sprite2D
 	var label_weapon: Label = $BoxContainer/Label
+	var label_damage: Label = $BoxContainer/LabelDamage
 	
 	#var item_inventory_slot: Sprite2D = $/root/Level2/CenterContainer/Sprite2D
 	
 	sprite_2d.texture = inventory_dictionary.values()[place].texture
 	print(inventory_dictionary.values()[place].item_name)
 	label_weapon.text = inventory_dictionary.values()[place].item_name
+	label_damage.text = str(inventory_dictionary.values()[place].item_damage)
+	
 

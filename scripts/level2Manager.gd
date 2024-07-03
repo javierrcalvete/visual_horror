@@ -1,11 +1,12 @@
 extends Node
 
-@onready var inventory: Control = $"../Level2/Inventory"
+
 
 
 
 
 func knife_found():
+	var inventory: Control = get_node("../Level2/Inventory")
 	var knife_item: Node2D = get_node("../Level2/KnifeItem")
 	print(knife_item)
 	knife_item.queue_free()
