@@ -11,5 +11,5 @@ func _process(delta: float) -> void:
 	pass
 
 
-var array_inventory = []
+var inventory_dictionary= {}
 

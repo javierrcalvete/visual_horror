@@ -16,5 +16,7 @@ func _on_hallway_animation_player_animation_finished(anim_name: StringName) -> v
 
 func _on_mouse_signal_knife_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_released():
-		
+		if !Inventory.inventory_dictionary.has("Knife"):
+			Inventory.inventory_dictionary["Knife"] = knife_item
 			knife_item.visible = true
+			print(Inventory.inventory_dictionary)
