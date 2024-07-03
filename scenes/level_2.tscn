@@ -88,10 +88,10 @@ rotation = -1.33867
 scale = Vector2(3, 3)
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-offset_left = 609.0
-offset_top = 847.0
-offset_right = 875.0
-offset_bottom = 1113.0
+offset_left = 709.0
+offset_top = 871.0
+offset_right = 749.0
+offset_bottom = 911.0
 
 [node name="Sprite2D" type="Sprite2D" parent="CenterContainer"]
 scale = Vector2(3, 3)
