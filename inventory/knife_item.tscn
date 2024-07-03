@@ -3,4 +3,5 @@
 [ext_resource type="Script" path="res://scripts/item/knife_item.gd" id="1_c2n2g"]
 
 [node name="Sprite2D" type="Sprite2D"]
+scale = Vector2(2, 2)
 script = ExtResource("1_c2n2g")

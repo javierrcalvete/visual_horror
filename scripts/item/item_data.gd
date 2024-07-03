@@ -9,6 +9,8 @@ enum Type {WEAPON, HEALTH, MAIN}
 
 @export var item_damage: int
 
+@export var item_health: int
+
 @export_multiline var description: String
 
 @export var item_texture: Texture2D
