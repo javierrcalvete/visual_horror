@@ -8,7 +8,7 @@ extends Sprite2D
 	
 
 	
-
+# starts the dialogue for lvl2
 func _on_hallway_animation_player_animation_finished(anim_name: StringName) -> void:
 	var animation_finishes=anim_name
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "level_2")
