@@ -4,7 +4,7 @@ extends Control
 
 
 var inventory_dictionary= {}
-
+var damage_item_selected: int
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -27,5 +27,5 @@ func show_item_slot(place):
 	print(inventory_dictionary.values()[place].item_name)
 	label_weapon.text = inventory_dictionary.values()[place].item_name
 	label_damage.text = str(inventory_dictionary.values()[place].item_damage)
-	
+	damage_item_selected = inventory_dictionary.values()[place].item_damage
 

@@ -28,4 +28,4 @@ func enemy_1_enter():
 
 func battle_enemy_1():
 	
-		print(knife_item.item_damage)
+		print(str(inventory.damage_item_selected))
