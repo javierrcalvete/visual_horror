@@ -23,3 +23,4 @@ func _on_mouse_signal_knife_gui_input(event: InputEvent) -> void:
 			knife_item.visible = true
 			$MouseSignalKnife.queue_free()
 			#print(Inventory.inventory_dictionary)
+			

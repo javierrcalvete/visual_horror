@@ -27,9 +27,6 @@ You: in the blood, there is something
 ~ knife_found
 -You found a knife!-
 set Level2Manager.knife_found()
-=> END
-
-~ enemy_1
 You: I hear something!
 You: What is that
 do Level2Manager.enemy_1_battle()
