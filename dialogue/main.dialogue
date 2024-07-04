@@ -29,6 +29,6 @@ You: in the blood, there is something
 set Level2Manager.knife_found()
 You: I hear something!
 You: What is that
-do Level2Manager.enemy_1_battle()
+do Level2Manager.enemy_1_enter()
 
 => END

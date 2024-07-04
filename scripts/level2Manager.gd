@@ -3,13 +3,14 @@ extends Node
 
 
 @onready var inventory: Control = get_node("../Level2/Inventory")
-
+@onready var knife_item: Node2D = get_node("../Level2/KnifeItem")
+@onready var enemy: Node2D
 
 var knife_was_found :bool = false
 
 #hides the knife when found
 func knife_found():
-	var knife_item: Node2D = get_node("../Level2/KnifeItem")
+	
 	print(knife_item)
 	knife_item.hide()
 # hardcoded slot for testing
@@ -17,10 +18,14 @@ func knife_found():
 	knife_was_found = true
 
 #call for animation of the enemy and shows the inventory
-func enemy_1_battle():
+func enemy_1_enter():
 	inventory.show_item_slot(0)
-	var enemy: Node2D = get_node("../Level2/Enemy_1")
+	enemy = get_node("../Level2/Enemy_1")
 	enemy.show()
 	var animation_player: AnimationPlayer = get_node("../Level2/Enemy_1/Sprite2D/AnimationPlayer")
 	animation_player.play("fade_in")
+	
 
+func battle_enemy_1():
+	
+		print(knife_item.item_damage)

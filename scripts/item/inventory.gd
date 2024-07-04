@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	pass
 
 
-# ser for item in enventory in the positio (place) and shows the texture
+# ser for item in enventory in the position (place) and shows the texture
 func show_item_slot(place):
 	var sprite_2d: Sprite2D = $BoxContainer/Sprite2D
 	var label_weapon: Label = $BoxContainer/Label
