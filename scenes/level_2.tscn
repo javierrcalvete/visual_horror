@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://qq56r8t86nde"]
+[gd_scene load_steps=9 format=3 uid="uid://qq56r8t86nde"]
 
 [ext_resource type="Texture2D" uid="uid://c5ti0mk5wle8i" path="res://assets/hallway.jpg" id="1_m0n6s"]
 [ext_resource type="Script" path="res://scripts/Hallway.gd" id="2_l2uk8"]
 [ext_resource type="PackedScene" uid="uid://bqdb16ygwxqcf" path="res://inventory/knife_item.tscn" id="3_6sfvi"]
 [ext_resource type="PackedScene" uid="uid://bda3evmaammqn" path="res://scenes/inventory.tscn" id="4_sj7ys"]
+[ext_resource type="PackedScene" uid="uid://cjjt68dyfaqyl" path="res://scenes/enemy_1.tscn" id="5_vykmf"]
 
 [sub_resource type="Animation" id="Animation_g5j8b"]
 length = 0.001
@@ -93,6 +94,8 @@ offset_left = 660.0
 offset_top = 905.0
 offset_right = 660.0
 offset_bottom = 905.0
+
+[node name="Enemy_1" parent="." instance=ExtResource("5_vykmf")]
 
 [connection signal="animation_finished" from="Hallway/HallwayAnimationPlayer" to="Hallway" method="_on_hallway_animation_player_animation_finished"]
 [connection signal="gui_input" from="Hallway/MouseSignalKnife" to="Hallway" method="_on_mouse_signal_knife_gui_input"]

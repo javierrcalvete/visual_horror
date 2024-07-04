@@ -13,3 +13,5 @@ func knife_found():
 # hardcoded slot for testing
 	inventory.show_item_slot(0)
 
+func enemy_1_battle():
+	var enemy: Node2D = get_node("../Level2/Enemy_1")

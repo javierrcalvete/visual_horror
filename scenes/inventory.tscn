@@ -13,8 +13,8 @@ script = ExtResource("1_c237q")
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 1
-offset_right = 86.0
-offset_bottom = 48.0
+offset_right = 138.0
+offset_bottom = 67.0
 alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="BoxContainer"]
@@ -28,6 +28,6 @@ theme_override_font_sizes/font_size = 30
 
 [node name="LabelDamage" type="Label" parent="BoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 30
