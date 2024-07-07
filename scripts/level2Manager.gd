@@ -7,7 +7,7 @@ extends Node
 @onready var enemy: Node2D
 
 var knife_was_found :bool = false
-
+var player_action:bool = false
 #hides the knife when found
 func knife_found():
 	
@@ -29,3 +29,7 @@ func enemy_1_enter():
 func battle_enemy_1():
 	
 		print(str(inventory.damage_item_selected))
+		if enemy.enemy_1_health<=10:
+			enemy.enemy_1_health -= inventory.damage_item_selected
+			print(enemy.enemy_1_health)
+			player_action = true
