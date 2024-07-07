@@ -77,10 +77,10 @@ autoplay = "fade_in"
 [node name="MouseSignalKnife" type="Control" parent="Hallway"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 197.134
-offset_top = 315.052
-offset_right = 396.134
-offset_bottom = 381.052
+offset_left = 114.0
+offset_top = 281.0
+offset_right = 478.0
+offset_bottom = 403.0
 mouse_filter = 1
 mouse_default_cursor_shape = 2
 
