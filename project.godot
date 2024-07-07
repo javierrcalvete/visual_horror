@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Inventory="*res://scripts/item/inventory.gd"
+Player="*res://scripts/player.gd"
 Level1Manager="*res://scripts/Level1Manager.gd"
 Level2Manager="*res://scripts/level2Manager.gd"
 

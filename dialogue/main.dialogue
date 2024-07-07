@@ -38,3 +38,8 @@ You: What was that
 You: Glad is dead
 
 => END
+
+~ enemy_1_damage
+You did 2 dmg to enemy
+
+=> END
