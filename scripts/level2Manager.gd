@@ -2,10 +2,10 @@ extends Node
 
 
 
-@onready var inventory: Control = get_node("../Level2/Inventory")
-@onready var knife_item: Node2D = get_node("../Level2/KnifeItem")
+@onready var inventory: Control
+@onready var knife_item: Node2D
 @onready var enemy: Node2D
-@onready var player_label_health: Label = get_node("../Level2/PlayerHealth")
+@onready var player_label_health: Label
 
 var animation_player: AnimationPlayer
 var knife_was_found :bool = false
@@ -14,7 +14,7 @@ var enemy_took_damage_finish:bool = false
 #hides the knife when found
 func knife_found():
 	
-	print(knife_item)
+	knife_item  = get_node("../Level2/KnifeItem")
 	knife_item.hide()
 # hardcoded slot for testing
 	#inventory.show_item_slot(0)
@@ -22,6 +22,8 @@ func knife_found():
 
 #call for animation of the enemy and shows the inventory
 func enemy_1_enter():
+	inventory = get_node("../Level2/Inventory")
+	player_label_health = get_node("../Level2/PlayerHealth")
 	player_label_health.text = str(Player.player_health)
 	inventory.show_item_slot(0)
 	enemy = get_node("../Level2/Enemy_1")

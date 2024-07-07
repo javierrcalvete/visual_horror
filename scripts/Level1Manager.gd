@@ -1,6 +1,6 @@
 extends Node
 
-@onready var prisoner_1: Node2D = get_node("../GAME/Level_1/Prisoner1")
+@onready var prisoner_1: Node2D 
 
 var prisoner1_enter : bool = false
 var prisioner1_dialogue_finish: bool = false
@@ -16,6 +16,7 @@ func _process(delta: float) -> void:
 
 
 func prisoner1_start():
+	prisoner_1 = get_node("../GAME/Level_1/Prisoner1")
 	prisoner_1.start_prisoner1()
 	
 
