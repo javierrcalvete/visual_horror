@@ -10,6 +10,7 @@ extends Node
 var animation_player: AnimationPlayer
 var knife_was_found :bool = false
 var player_action:bool = false
+var enemy_took_damage_finish:bool = false
 #hides the knife when found
 func knife_found():
 	
@@ -35,9 +36,17 @@ func battle_enemy_1():
 		if enemy.enemy_1_health > 2 and enemy.enemy_1_health <=10:
 			enemy.enemy_1_health -= inventory.damage_item_selected
 			#print(enemy.enemy_1_health)
-			
 			DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "enemy_1_damage")
+			#if  enemy_took_damage_finish == true:
+				#enemy_does_damage()
 		else:
 			animation_player.play("fade_out")
+			player_label_health.hide()
 	
 				
+
+func enemy_does_damage():
+	
+	Player.player_health -= enemy.enemy_damage
+	player_label_health.text = str(Player.player_health)
+	DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "enemy_1_does_damage")

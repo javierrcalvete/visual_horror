@@ -41,5 +41,11 @@ You: Glad is dead
 
 ~ enemy_1_damage
 You did 2 dmg to enemy
+do Level2Manager.enemy_does_damage() #enemy hurts the player
+
+=> END
+
+~ enemy_1_does_damage
+Enemy did 1 dmg to you
 
 => END

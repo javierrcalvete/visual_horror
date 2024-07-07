@@ -4,6 +4,8 @@ extends Node2D
 @onready var health_label: Label = $Sprite2D/Health
 
 var death_animation_finish:bool = false
+var enemy_damage:int = 1
+
 func _ready() -> void:
 	self.hide()
 
@@ -18,6 +20,7 @@ func _on_damage_area_gui_input(event: InputEvent) -> void:
 			
 			Level2Manager.battle_enemy_1()
 			health_label.text = str(enemy_1_health)
+			
 
 
 
