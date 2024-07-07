@@ -24,3 +24,5 @@ func _on_damage_area_gui_input(event: InputEvent) -> void:
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "fade_out":
 		self.queue_free()
+		death_animation_finish = true
+		DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "enemy_1_death")

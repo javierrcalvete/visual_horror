@@ -18,17 +18,23 @@ set Level1Manager.prisioner1_dialogue_finish = true
 => END
 
 ~ level_2
-
 You: Oh god!
 You: in the blood, there is something
 	
 => END
 
 ~ knife_found
+
 -You found a knife!-
 set Level2Manager.knife_found()
 You: I hear something!
 You: What is that
 do Level2Manager.enemy_1_enter()
+
+=> END
+
+~ enemy_1_death
+You: What was that
+You: Glad is dead
 
 => END
