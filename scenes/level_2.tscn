@@ -107,7 +107,7 @@ offset_bottom = 52.0
 theme_override_font_sizes/font_size = 30
 
 [node name="SyringeItem" parent="." instance=ExtResource("6_xj67s")]
-position = Vector2(980, 270)
+position = Vector2(980, 269)
 scale = Vector2(3, 3)
 
 [connection signal="animation_finished" from="Hallway/HallwayAnimationPlayer" to="Hallway" method="_on_hallway_animation_player_animation_finished"]
