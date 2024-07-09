@@ -36,7 +36,9 @@ do Level2Manager.enemy_1_enter()
 ~ enemy_1_death
 You: What was that
 You: Glad is dead
-
+do Level2Manager.syrenge_found()
+You found a syringe
+do Level2Manager.syringe_hide()
 => END
 
 ~ enemy_1_damage

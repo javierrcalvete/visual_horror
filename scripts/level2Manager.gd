@@ -6,6 +6,7 @@ extends Node
 @onready var knife_item: Node2D
 @onready var enemy: Node2D
 @onready var player_label_health: Label
+var syrenge_item: Node2D
 
 var animation_player: AnimationPlayer
 var knife_was_found :bool = false
@@ -20,6 +21,12 @@ func knife_found():
 	#inventory.show_item_slot(0)
 	knife_was_found = true
 
+func syrenge_found():
+	syrenge_item = get_node("../Level2/SyringeItem")
+	syrenge_item.show()
+
+func syringe_hide():
+	syrenge_item.hide()
 #call for animation of the enemy and shows the inventory
 func enemy_1_enter():
 	inventory = get_node("../Level2/Inventory")
@@ -32,6 +39,8 @@ func enemy_1_enter():
 	animation_player.play("fade_in")
 	
 
+
+# damage enemy and loads dialogue for enemy damage to him and to you
 func battle_enemy_1():
 	#print(str(inventory.damage_item_selected))
 		
@@ -52,3 +61,5 @@ func enemy_does_damage():
 	Player.player_health -= enemy.enemy_damage
 	player_label_health.text = str(Player.player_health)
 	DialogueManager.show_dialogue_balloon(load("res://dialogue/main.dialogue"), "enemy_1_does_damage")
+
+
