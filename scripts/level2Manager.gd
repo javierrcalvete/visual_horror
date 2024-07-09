@@ -20,7 +20,7 @@ func knife_found():
 # hardcoded slot for testing
 	Inventory.show_item_slot(0)
 	knife_was_found = true
-	print(Inventory.inventory_dictionary.keys())
+	
 
 # after showing the syringe add to inventory_dictionary
 func syrenge_found():
@@ -29,6 +29,7 @@ func syrenge_found():
 	if !Inventory.inventory_dictionary.has("Syringe"):
 		Inventory.inventory_dictionary["Syringe"] = syrenge_item
 		print(Inventory.inventory_dictionary.keys())
+
 func syringe_hide():
 	syrenge_item.hide()
 	

@@ -1,7 +1,7 @@
 extends Control
 
 
-
+@onready var right_button: Button 
 
 
 var inventory_dictionary= {}
@@ -13,11 +13,14 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	right_button = get_node("/root/Level2/Inventory/BoxContainer/Control/Button")
+	# right_button.hide()
 
 
 # ser for item in enventory in the position (place) and shows the texture
 func show_item_slot(place):
+	right_button.show()
+
 	var sprite_2d: Sprite2D = get_node("/root/Level2/Inventory/BoxContainer/Sprite2D")
 	var label_weapon: Label = get_node("/root/Level2/Inventory/BoxContainer/Label")
 	var label_damage: Label = get_node("/root/Level2/Inventory/BoxContainer/LabelDamage")
@@ -31,3 +34,9 @@ func show_item_slot(place):
 	label_damage.text = str(inventory_dictionary.values()[place].item_damage)
 	damage_item_selected = inventory_dictionary.values()[place].item_damage
 
+
+func buttons():
+	var inventory_size: int = inventory_dictionary.size()
+	var clicks_on_button: int = 0
+	if inventory_size <= clicks_on_button:
+		pass
