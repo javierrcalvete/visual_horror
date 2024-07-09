@@ -69,3 +69,5 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_u08o6")
 icon = ExtResource("2_i82es")
 flat = true
 script = ExtResource("3_g00wh")
+
+[connection signal="pressed" from="BoxContainer/Control/Button" to="." method="_on_button_pressed"]
