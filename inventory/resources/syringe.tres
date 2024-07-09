@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://v74rvq0p3iqt"]
+
+[ext_resource type="Texture2D" uid="uid://duvqeg28qqe1d" path="res://assets/knife.png" id="1_wtd40"]
+[ext_resource type="Script" path="res://scripts/item/item_data.gd" id="2_on7d3"]
+
+[resource]
+script = ExtResource("2_on7d3")
+type = 1
+item_name = "Syringe"
+item_damage = 0
+item_health = 4
+description = ""
+item_texture = ExtResource("1_wtd40")
