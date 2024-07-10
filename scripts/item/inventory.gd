@@ -25,11 +25,11 @@ func show_item_slot(place):
 	var button_right: Button = get_node("/root/Level2/Inventory/BoxContainer/Control/Button")
 	#var item_inventory_slot: Sprite2D = $/root/Level2/CenterContainer/Sprite2D
 	button_right.show()
-	sprite_2d.texture = inventory_dictionary.values()[place].texture
+	sprite_2d.texture = Inventory.inventory_dictionary[place].texture
 	
-	label_weapon.text = inventory_dictionary.values()[place].item_name
-	label_damage.text = str(inventory_dictionary.values()[place].item_damage)
-	damage_item_selected = inventory_dictionary.values()[place].item_damage
+	label_weapon.text = Inventory.inventory_dictionary[place].item_name
+	label_damage.text = str(Inventory.inventory_dictionary[place].item_damage)
+	damage_item_selected = Inventory.inventory_dictionary[place].item_damage
 
 
 
@@ -53,4 +53,4 @@ func _on_button_pressed() -> void:
 	
 	print(count_key_dictionary)
 	print(name_place_of_key)
-	Inventory.show_item_slot(str(name_place_of_key))
+	show_item_slot(name_place_of_key)

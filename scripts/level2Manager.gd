@@ -18,7 +18,7 @@ func knife_found():
 	knife_item  = get_node("../Level2/KnifeItem")
 	knife_item.hide()
 # hardcoded slot for testing
-	Inventory.show_item_slot(0)
+	
 	knife_was_found = true
 	
 
@@ -38,7 +38,7 @@ func enemy_1_enter():
 	
 	player_label_health = get_node("../Level2/PlayerHealth")
 	player_label_health.text = str(Player.player_health)
-	Inventory.show_item_slot(0)
+	Inventory.show_item_slot("Knife")
 	enemy = get_node("../Level2/Enemy_1")
 	enemy.show()
 	animation_player = get_node("../Level2/Enemy_1/Sprite2D/AnimationPlayer")
