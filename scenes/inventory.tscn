@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bda3evmaammqn"]
+[gd_scene load_steps=9 format=3 uid="uid://bda3evmaammqn"]
 
 [ext_resource type="Script" path="res://scripts/item/inventory.gd" id="1_c237q"]
 [ext_resource type="Texture2D" uid="uid://dlmo4h6d3oepb" path="res://assets/right_button.png" id="2_i82es"]
@@ -15,6 +15,8 @@ content_margin_bottom = 0.0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_elcnv"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u08o6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2fcq"]
 
 [node name="Inventory" type="Control"]
 layout_mode = 3
@@ -57,10 +59,9 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="BoxContainer/Control"]
 layout_mode = 0
-offset_left = 204.0
-offset_top = -34.0
-offset_right = 229.0
-offset_bottom = -3.0
+offset_left = 92.0
+offset_top = -31.0
+offset_right = 117.0
 scale = Vector2(4, 4)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_wor8m")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_3nlvc")
@@ -70,4 +71,16 @@ icon = ExtResource("2_i82es")
 flat = true
 script = ExtResource("3_g00wh")
 
+[node name="ButtonLeft" type="Button" parent="BoxContainer/Control"]
+layout_mode = 0
+offset_left = -113.0
+offset_top = 61.0
+offset_right = -96.0
+offset_bottom = 77.0
+rotation = -3.14159
+scale = Vector2(4, 4)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_x2fcq")
+icon = ExtResource("2_i82es")
+
 [connection signal="pressed" from="BoxContainer/Control/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="BoxContainer/Control/ButtonLeft" to="." method="_on_button_left_pressed"]

@@ -28,6 +28,7 @@ func syrenge_found():
 	syrenge_item.show()
 	if !Inventory.inventory_dictionary.has("Syringe"):
 		Inventory.inventory_dictionary["Syringe"] = syrenge_item
+		Inventory.show_item_slot("Knife")
 		
 
 func syringe_hide():
